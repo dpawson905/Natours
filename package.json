@@ -4,12 +4,16 @@
   "description": "Landing page for Natours",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "prefix": "postcss css/style.css --use autoprefixer -d prefix_css"
   },
   "author": "Darrell Pawson",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.7.2"
+    "autoprefixer": "^8.1.0",
+    "node-sass": "^4.7.2",
+    "postcss": "^6.0.19",
+    "postcss-cli": "^5.0.0"
   },
   "dependencies": {
     "jquery": "^3.3.1"

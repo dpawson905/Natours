@@ -29,11 +29,26 @@
 
     <nav class="navigation__nav">
       <ul class="navigation__list">
-        <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natours</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your Benefits</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular Tours</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book Now</a></li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            <span>01</span>About Natours</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            <span>02</span>Your Benefits</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            <span>03</span>Popular Tours</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            <span>04</span>Stories</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            <span>05</span>Book Now</a>
+        </li>
       </ul>
     </nav>
   </div>
@@ -49,7 +64,7 @@
         <span class="heading-primary--main">Outdoors</span>
         <span class="heading-primary--sub">is where life happens</span>
       </h1>
-      <a class="btn btn--white btn--animated" href="#">Discover our tours</a>
+      <a class="btn btn--white btn--animated" href="#tours">Discover our tours</a>
     </div>
   </header>
   <!-- End Header -->
@@ -160,7 +175,7 @@
     <section class="section-tours">
       <!-- Begin Tours Heading -->
       <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-secondary">
+        <h2 class="heading-secondary" id="tours">
           Most popular tours
         </h2>
       </div>
@@ -200,7 +215,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">$297</p>
                 </div>
-                <a href="#" class="btn btn--white">Book Now</a>
+                <a href="#popup" class="btn btn--white">Book Now</a>
               </div>
             </div>
             <!-- End Card 1 Back -->
@@ -240,7 +255,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">$497</p>
                 </div>
-                <a href="#" class="btn btn--white">Book Now</a>
+                <a href="#popup" class="btn btn--white">Book Now</a>
               </div>
             </div>
             <!-- End Card 2 Back -->
@@ -280,7 +295,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">$897</p>
                 </div>
-                <a href="#" class="btn btn--white">Book Now</a>
+                <a href="#popup" class="btn btn--white">Book Now</a>
               </div>
             </div>
             <!-- End Card 3 Back -->
@@ -464,16 +479,38 @@
       <div class="col-1-of-2">
         <p class="footer__copyright">
           Advanced CSS and Sass template built by
-          <a href="https://djpawson.me" target="_blank" class="footer__link">Darrell Pawson</a>. Copyright &copy; by Darrell Pawson. You are 100% allowed to use this webpage for both personal and
-          commercial use, but NOT to claim it as your own design. A credit to the original author, Darrell Pawson, is of course
-          highly appreciated.
+          <a href="https://djpawson.me" target="_blank" class="footer__link">Darrell Pawson</a>. Copyright &copy; by Darrell Pawson. You are 100% allowed to use this webpage for both personal
+          and commercial use, but NOT to claim it as your own design. A credit to the original author, Darrell Pawson, is
+          of course highly appreciated.
         </p>
       </div>
     </div>
-    
+
   </footer>
   <!-- End Footer Section -->
-  <script type="text/javascript" src="js/app.js"></script>
+
+  <!-- BEGIN POPUP -->
+  <div class="popup" id="popup">
+    <div class="popup__content">
+      <div class="popup__left">
+        <img src="img/nat-8.jpg" alt="Tour Photo" class="popup__img">
+        <img src="img/nat-9.jpg" alt="Tour Photo" class="popup__img">
+      </div>
+      <div class="popup__right">
+        <a href="#section-tours" class="popup__close">&times;</a>
+        <h2 class="heading-secondary u-margin-bottom-small">Start Booking Now</h2>
+        <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+        <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, eaque, obcaecati recusandae repellendus minima culpa
+          ipsa, animi exercitationem iure id alias libero quibusdam earum cum est! Dignissimos, nihil ratione! At! Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Labore, eaque, obcaecati recusandae repellendus minima culpa
+          ipsa, animi exercitationem iure id alias libero quibusdam earum cum est! Dignissimos, nihil ratione! At!</p>
+        <a href="#" class="btn btn--green">Book Now</a>
+      </div>
+    </div>
+  </div>
+  <!-- END POPUP -->
+
+  <!-- <script type="text/javascript" src="js/app.js"></script> -->
 </body>
 
 </html>
